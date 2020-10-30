@@ -12,6 +12,17 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     @IBOutlet weak var tableView: UITableView!
     
+    @IBAction func onLogoutButton(_ sender: Any) {
+        PFUser.logOut()
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        //let sceneDelegate = window?.delegate as? SceneDelegate
+        let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
+        let delegate = self.view.window?.windowScene?.delegate as! SceneDelegate
+        
+//        let delegate = UISceneDelegate.shared.delegate as! AppDelegate
+        
+        delegate.window?.rootViewController = loginViewController
+    }
     var posts = [PFObject]()
         
     override func viewDidLoad() {
