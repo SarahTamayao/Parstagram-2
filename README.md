@@ -24,11 +24,9 @@ Here's a walkthrough of implemented user stories:
 
 Login and Logout Features: 
 
-<img src='http://g.recordit.co/VAwHGk9bmO.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 View and Add Comments Features: 
 
-<img src='http://g.recordit.co/Wy3v968wkL.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 # Parstagram - Part I
 
